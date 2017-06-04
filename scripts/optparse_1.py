@@ -27,19 +27,19 @@ parser.add_option('-f', '--file',
 args = [ '-f', 'foo.txt', '-l', '40']
 options, args = parser.parse_args()
 print options, args
-# data = sys.stdin.read()
-# chars = len(data)
-# words = len(data.split())
-# lines = data.count('\n')
-#
-# if not (options.chars or options.words or options.lines):
-#     options.chars, options.words, options.lines = True, True, True
-#
-# if options.chars:
-#     print options.chars,
-# if options.words:
-#     print options.words,
-# if options.lines:
-#     print options.lines,
-# if options.files:
-#     print options.files
+data = sys.stdin.read()
+chars = len(data)
+words = len(data.split())
+lines = data.count('\n')
+
+if not (options.chars or options.words or options.lines):
+    options.chars, options.words, options.lines = True, True, True
+
+if options.chars:
+    print chars,
+if options.words:
+    print words,
+if options.lines:
+    print lines,
+if options.files:
+    print files
