@@ -16,4 +16,4 @@ def get_dic(topdir):
 
 if __name__ == '__main__':
     for k, v in get_dic(sys.argv[1]):
-        print 'filename:%s, size:%s' % (k, v)
+        print 'filename:%-60s size:%10sKB' % (k, v)
