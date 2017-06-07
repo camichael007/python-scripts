@@ -15,7 +15,7 @@ except NameError, e:
     print e
     print '111'
 except FuncError as e:
-    print e
+    print '222'
 except Exception as e:
     print e
     print '333'
