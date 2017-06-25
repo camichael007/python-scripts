@@ -101,7 +101,8 @@ if __name__ == '__main__':
     dic.update(osver)
     dic.update(cpu)
     dic.update(memory)
+    print dic
     #data = urllib.urlencode(dic)
-    data = pickle.dumps(dic)
-    req = req = urllib2.urlopen('http://192.168.14.131:8000/hostinfo/collect/', data)
-    print req.read()
+    #data = pickle.dumps(dic)
+    #req = req = urllib2.urlopen('http://192.168.14.131:8000/hostinfo/collect/', data)
+    #print req.read()

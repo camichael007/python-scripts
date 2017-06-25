@@ -27,7 +27,9 @@ def dmiDic():
     dmi_dic = {}
     data = getDmi()
     lines = parseDmi(data)
+    print lines
     dic = dict([i.strip().split(': ') for i in lines])
+    print dic
     dmi_dic['vendor'] = dic['Manufacturer']
     dmi_dic['product'] = dic['Product Name']
     dmi_dic['sn'] = dic['Serial Number']

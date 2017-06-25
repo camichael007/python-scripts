@@ -15,8 +15,8 @@ def parseIfconfig(data):
         macaddr = line_list[0].split()[-1]
         ipaddr = line_list[1].split()[1].split(':')[1]
         dic[devname] = [macaddr, ipaddr]
-        return dic
+    return dic
 if __name__ == '__main__':
     data = getIfconfig()
     print parseIfconfig(data)
-    
+
